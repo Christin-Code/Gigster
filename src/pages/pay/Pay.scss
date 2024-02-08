@@ -1,0 +1,65 @@
+/* Pay.scss */
+
+.pay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 60vh;
+  background-color: #f8f8f8;
+}
+
+.payment-container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.elements {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Style the Stripe elements */
+.StripeElement {
+  padding: 25px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  background-color: #bbf0f4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* Style the error messages */
+.StripeElement--invalid {
+  border-color: #ff4858;
+}
+
+/* Style the success message */
+.StripeElement--webkit-autofill {
+  background-color: #fff8ea !important;
+}
+
+/* Style the button */
+.pay-button {
+  background-color: #3498db;
+  color: #388e3c;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #030e17;
+  }
+}
